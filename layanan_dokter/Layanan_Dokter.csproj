@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{837DFD54-495C-4022-9A9F-459422BFFA3E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Layanan_Dokter</RootNamespace>
+    <AssemblyName>Layanan_Dokter</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>E8FE870CA11C13B9C99F1FF00B05D3C1488BDE3E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Layanan_Dokter_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DashBoardAdmin\frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmAkunDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmAkunDokter.Designer.cs">
+      <DependentUpon>frmAkunDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmAkunPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmAkunPasien.Designer.cs">
+      <DependentUpon>frmAkunPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmDataObat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmDataObat.Designer.cs">
+      <DependentUpon>frmDataObat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmRiwayat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoardAdmin\frmRiwayat.Designer.cs">
+      <DependentUpon>frmRiwayat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmBuatData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmBuatData.Designer.cs">
+      <DependentUpon>frmBuatData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmDetailPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmDetailPasien.Designer.cs">
+      <DependentUpon>frmDetailPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmDokter.Designer.cs">
+      <DependentUpon>frmDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmEdit.Designer.cs">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmIsiData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmIsiData.Designer.cs">
+      <DependentUpon>frmIsiData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmJadwal.Designer.cs">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\frmRiwayat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\frmRiwayat.Designer.cs">
+      <DependentUpon>frmRiwayat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderDokter\loadingD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderDokter\loadingD.Designer.cs">
+      <DependentUpon>loadingD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmBuatDatadiri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmBuatDatadiri.Designer.cs">
+      <DependentUpon>frmBuatDatadiri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmDataDiri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmDataDiri.Designer.cs">
+      <DependentUpon>frmDataDiri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmDetailDokter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmDetailDokter.Designer.cs">
+      <DependentUpon>frmDetailDokter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmEdit.Designer.cs">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwal.Designer.cs">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwalNewB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwalNewB.Designer.cs">
+      <DependentUpon>frmJadwalNewB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwalNewK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmJadwalNewK.Designer.cs">
+      <DependentUpon>frmJadwalNewK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmPasien.Designer.cs">
+      <DependentUpon>frmPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\frmRiwayatPasien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\frmRiwayatPasien.Designer.cs">
+      <DependentUpon>frmRiwayatPasien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FolderPasien\loadingP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FolderPasien\loadingP.Designer.cs">
+      <DependentUpon>loadingP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DashBoardAdmin\frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmin\frmAkunDokter.resx">
+      <DependentUpon>frmAkunDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmin\frmAkunPasien.resx">
+      <DependentUpon>frmAkunPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmin\frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmin\frmDataObat.resx">
+      <DependentUpon>frmDataObat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoardAdmin\frmRiwayat.resx">
+      <DependentUpon>frmRiwayat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmBuatData.resx">
+      <DependentUpon>frmBuatData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmDetailPasien.resx">
+      <DependentUpon>frmDetailPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmDokter.resx">
+      <DependentUpon>frmDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmIsiData.resx">
+      <DependentUpon>frmIsiData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmJadwal.resx">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\frmRiwayat.resx">
+      <DependentUpon>frmRiwayat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderDokter\loadingD.resx">
+      <DependentUpon>loadingD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmBuatDatadiri.resx">
+      <DependentUpon>frmBuatDatadiri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmDataDiri.resx">
+      <DependentUpon>frmDataDiri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmDetailDokter.resx">
+      <DependentUpon>frmDetailDokter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmEdit.resx">
+      <DependentUpon>frmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmJadwal.resx">
+      <DependentUpon>frmJadwal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmJadwalNewB.resx">
+      <DependentUpon>frmJadwalNewB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmJadwalNewK.resx">
+      <DependentUpon>frmJadwalNewK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmPasien.resx">
+      <DependentUpon>frmPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\frmRiwayatPasien.resx">
+      <DependentUpon>frmRiwayatPasien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FolderPasien\loadingP.resx">
+      <DependentUpon>loadingP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Layanan_Dokter_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gmbr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
