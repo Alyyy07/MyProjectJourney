@@ -1,1 +1,0 @@
-untuk node_modules tidak saya upload karena terlalu banyak tapi kalian bisa lihat library apa saja yang saya gunakan di package.json anda juga dapat langsung mendownload librarynya dengan menggunakan package.jsonnya
